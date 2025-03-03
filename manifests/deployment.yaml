@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: pingpong
-          image: hzd454/ping-pong:1.7
+          image: PROJECT/IMAGE
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
