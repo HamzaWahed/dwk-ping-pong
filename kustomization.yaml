@@ -1,0 +1,8 @@
+resources:
+  - manifests/postgres-init.yaml
+  - manifests/postgres.yaml
+  - manifests/service.yaml
+  - manifests/deployment.yaml
+
+image:
+  - name: PROJECT/IMAGE
