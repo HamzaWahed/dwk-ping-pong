@@ -4,5 +4,5 @@ resources:
   - manifests/service.yaml
   - manifests/deployment.yaml
 
-image:
+images:
   - name: PROJECT/IMAGE

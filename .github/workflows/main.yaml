@@ -27,7 +27,7 @@ jobs:
         uses: imranismail/setup-kustomize@v2
 
       - name: Use right image
-        run: kustomize edit set image PROJECT/IMAGE="hzd454/ping-pong:$GITHUB_SHA"
+        run: kustomize edit set image PROJECT/IMAGE=hzd454/ping-pong:$GITHUB_SHA
 
       - name: commit kustomization.yaml to GitHub
         uses: EndBug/add-and-commit@v9
