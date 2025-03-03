@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-init-configmap
+data:
+  init-db.sql: |
+    CREATE DATABASE mydb;
+    \c mydb
+    CREATE TABLE pingpong (id INT PRIMARY KEY, count INT);
+    INSERT INTO pingpong VALUES (1,0);
