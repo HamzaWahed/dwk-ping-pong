@@ -7,6 +7,6 @@ resources:
 images:
 - name: PROJECT/IMAGE
   newName: hzd454/ping-pong
-  newTag: f3859caba9f16f4e3c2b717d6efcff6ea1590fa2
+  newTag: 433faf08320a2b766dd8339368a65cb73356bbef
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
