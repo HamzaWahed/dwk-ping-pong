@@ -21,7 +21,7 @@ jobs:
 
       - name: Build and publish backend
         run: |-
-          docker buildx build --platforms darwin/arm -t hzd454/pingpong:$GITHUB_SHA --push .
+          docker buildx build --platform darwin/arm -t hzd454/pingpong:$GITHUB_SHA --push .
 
       - name: Set up Kustomize
         uses: imranismail/setup-kustomize@v2
