@@ -18,10 +18,12 @@ router.get("/healthz", async (ctx) => {
     await pool.query("SELECT 1");
     ctx.status = 200;
     ctx.body = { status: "running" };
+    console.log("app is healthy");
   } catch (err) {
     console.error("Health check error:", err);
     ctx.status = 503;
     ctx.body = { status: "health check failed" };
+    console.log("app is not healthy");
   }
 });
 
